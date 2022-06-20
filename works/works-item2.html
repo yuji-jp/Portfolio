@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seminar site|セミナーサイト</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="../css/ress.css">
+  <link rel="stylesheet" href="../css/wotk-item.css">
+  <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+  <!--header-->
+  <header id="header" class="header">
+    <div class="header-inner">
+      <h1 class="site-logo"><a href="../index.html">yuji.design</a></h1>
+      <nav class="navi">
+        <ul class="navi-list">
+          <li class="navi-item"><a href="./works.html">works</a></li>
+          <li class="navi-item"><a href="../index.html#skills">skill</a></li>
+          <li class="navi-item"><a href="../contact.html">contact</a></li>
+        </ul>
+      </nav>
+
+      <button type="button" class="humburger">
+        <span class="humburger-line"></span>
+      </button>
+    </div>
+  </header>
+  <!--header-->
+
+  <!--パンくずリスト-->
+  <section class="breadcrumb">
+    <div class="container">
+      <ol class="crumb-list" itemscope itemtype="https://schema.org/BreadcrumbList">
+        <!-- 1つめ -->
+        <li class="crumb-item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a itemprop="item" href="../index.html">
+            <span itemprop="name">HOME</span>
+          </a>
+          <meta itemprop="position" content="1" />
+        </li>
+
+        <!-- 2つめ -->
+        <li class="crumb-item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a itemprop="item" href="works.html">
+            <span itemprop="name">works</span>
+          </a>
+          <meta itemprop="position" content="2" />
+        </li>
+
+        <!-- 3つめ -->
+        <li class="crumb-item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+            <span itemprop="name">game site</span>
+          <meta itemprop="position" content="3" />
+        </li>
+    </div>
+  </section>
+  <!--/-->
+
+  <!--main-->
+  <main class="contents">
+    <article class="article">
+      <div class="article-inner">
+        <h1 class="article-title">GAME website (架空サイト)</h1>
+        <div class="article-img"><img src="../image/planet game.jpg" alt="セミナーサイトの画像です"></div>
+
+        <div class="article-body">
+
+          <h3 class="article-info">URL</h3>
+          <p><a href="https://yuji-jp.github.io/Game-Website/" target="_blank"
+              rel="noopener">https://yuji-jp.github.io/Game-Website/</a></p>
+          <h3 class="article-info">作品名</h3>
+          <p>ゲームサイト（架空）</p>
+          <h3 class="article-info">使用技術</h3>
+          <p>HTML5,CSS3,Javascript(jquery)</p>
+          <h3 class="article-info">デザインデータ</h3>
+          <p>FIGMA</p>
+          <h3 class="article-info">デザインについて</h3>
+          <p>
+            <a href="https://webdesigner-go.com/coding-practice/">『無料コーディング練習所』</a>というサイトの一つを模写してデザインしました。
+          </p>
+          <h3 class="article-info">コーディングポイント</h3>
+          <p><span>・HTML</span><br>
+            videoタグを使い背景動画の設置。audioタグで音声ファイルの設置。<br>
+            トレイラーセクションでのYOUTUBE動画の設置。font-awsome使いfooterにSNSアイコン配置。
+          <p><span>・CSS</span> <br>
+            背景動画を固定しパララックスの実装。ファーストビュー左下のスクロールダウン表示を付ける。<br>
+            ファーストビュー右下のニュース欄のテキストを流れるようにする。<br class="sp">story内の画像をtransform: skew();を使い、傾けてさせる。<br>
+            ローディングの実装。
+          </p>
+          <p><span>・Javascript(jquery)</span><br>
+            ローディングの制御。audioの再生、停止の制御。ヘッダーリンクをクリックすると各リンクへのスクロールを実装。
+        </div>
+        <div class="works-button">
+          <a class="works-link" href="works.html">Works一覧へ</a>
+        </div>
+
+      </div>
+    </article>
+
+  </main>
+  <!--/main-->
+
+  <!--footer-->
+  <footer id="footer" class="footer">
+    <div class="copyright">
+      <p>&copy;.select</p>
+    </div>
+  </footer>
+  <!--/footer-->
+
+  <!--pageTop-->
+  <div class="page-top">
+    <a href="#" class="page-topLink"><i class="fa-solid fa-arrow-up"></i></a>
+  </div>
+  <!--/pageTop-->
+
+  <script src="https://kit.fontawesome.com/75df040f4e.js" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="../js/script.js"></script>
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+
+</body>
+
+</html>

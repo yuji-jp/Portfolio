@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CONTACT|お問い合わせ</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./css/ress.css">
+  <link rel="stylesheet" href="./css/contact.css">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+  <!--header-->
+  <header id="header" class="header">
+    <div class="header-inner">
+      <h1 class="site-logo"><a href="index.html">yuji.design</a></h1>
+      <nav class="navi">
+        <ul class="navi-list">
+          <li class="navi-item"><a href="./works/works.html">works</a></li>
+          <li class="navi-item"><a href="index.html#skills">skill</a></li>
+          <li class="navi-item"><a href="contact.html">contact</a></li>
+        </ul>
+      </nav>
+
+      <button type="button" class="humburger">
+        <span class="humburger-line"></span>
+      </button>
+    </div>
+  </header>
+
+
+  <div class="subHeader">
+    <div class="subHeader-body">
+      <h2 class="subHeader-title">contact<span>お問い合わせ</span></h2>
+    </div>
+  </div>
+  <!--/header-->
+
+  <!--パンくずリスト-->
+  <section class="breadcrumb">
+    <div class="container">
+      <ol class="crumb-list" itemscope itemtype="https://schema.org/BreadcrumbList">
+        <!-- 1つめ -->
+        <li class="crumb-item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a itemprop="item" href="index.html">
+            <span itemprop="name">HOME</span>
+          </a>
+          <meta itemprop="position" content="1" />
+        </li>
+
+        <!-- 2つめ -->
+        <li class="crumb-item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+            <span itemprop="name">CONTACT</span>
+          <meta itemprop="position" content="2" />
+        </li>
+    </div>
+  </section>
+  <!--/-->
+
+  <!--main-->
+  <main class="contents">
+    <section class="contact" id="contact">
+          <div class="contact-text">
+            <p class="text">Webサイトの制作のご依頼やお見積りなど、お気軽にご相談ください。</p>
+          </div>
+        <div class="contact-body">
+          <form action="" class="form">
+            <div class="form-item">
+              <div class="form-title">お問い合わせ種別<span class="form-require">*必須</span></div>
+              <span class="form-radio">
+                <input type="radio" id="type01" name="type" value="お仕事のご依頼・ご相談" checked><label
+                  for="type01">お仕事のご依頼・ご相談</label></span>
+              <span class="form-radio"><input type="radio" id="type02" name="type" value="お見積りのご依頼"><label
+                  for="type02">お見積りのご依頼</label></span>
+              <span class="form-radio"><input type="radio" id="type03" name="type" value="採用について"><label
+                  for="type03">採用について</label></span>
+              <span class="form-radio"><input type="radio" id="type04" name="type" value="その他"><label
+                  for="type04">その他</label></span>
+            </div>
+
+            <div class="form-item">
+              <label for="name" class="form-title">お名前<span class="form-require">*必須</span></label>
+              <input type="text" id="name" name="name" required class="form-input">
+            </div>
+            <div class="form-item">
+              <label for="company" class="form-title">会社名<span class="form-require">*必須</span></label>
+              <input type="text" id="company" name="company" required class="form-input">
+            </div>
+            <div class="form-item">
+              <label for="email" class="form-title">メールアドレス<span class="form-require">*必須</span></label>
+              <input type="email" id="email" name="email" required class="form-input">
+            </div>
+            <div class="form-item">
+              <label for="tel" class="form-title">電話番号<span class="form-note">（半角数字ハイフンなし）</span></label>
+              <input type="tel" id="tel" name="tel" class="form-input">
+            </div>
+
+            <div class="form-item">
+              <label for="comment" class="form-title">お問い合わせ内容</label>
+              <textarea id="comment" name="comment" placeholder="お問い合わせ内容を具体的にご記入くださいませ。"
+                class="form-textarea"></textarea>
+            </div>
+
+            <div class="form-item">
+              <label for="job" class="form-title">当サイトをどちらでお知りになりましたか？<span class="form-require">*必須</span></label>
+              <select id="job" name="job" required class="form-select">
+                <option value="">選択してください</option>
+                <option value="Google/Yahoo検索">Google/Yahoo検索</option>
+                <option value="SNS">SNS</option>
+                <option value="ブログ">ブログ</option>
+                <option value="友人や知人">友人や知人</option>
+                <option value="その他">その他</option>
+              </select>
+            </div>
+            <div class="form-btn">
+              <button type="submit" class="btn">送信する</button>
+            </div>
+          </form>
+        </div>
+    </section>
+  </main>
+  <!--main-->
+
+  <!--footer-->
+  <footer id="footer" class="footer">
+    <div class="copyright">
+      <p>&copy;.select</p>
+    </div>
+  </footer>
+  <!--/footer-->
+
+  <!--pageTop-->
+  <div class="page-top">
+    <a href="#" class="page-topLink"><i class="fa-solid fa-arrow-up"></i></a>
+  </div>
+  <!--/pageTop-->
+
+  <script src="https://kit.fontawesome.com/75df040f4e.js" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="./js/script.js"></script>
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+</body>
+
+</html>

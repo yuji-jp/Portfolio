@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seminar site|セミナーサイト</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="../css/ress.css">
+  <link rel="stylesheet" href="../css/wotk-item.css">
+  <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+  <!--header-->
+  <header id="header" class="header">
+    <div class="header-inner">
+      <h1 class="site-logo"><a href="../index.html">yuji.design</a></h1>
+      <nav class="navi">
+        <ul class="navi-list">
+          <li class="navi-item"><a href="./works.html">works</a></li>
+          <li class="navi-item"><a href="../index.html#skills">skill</a></li>
+          <li class="navi-item"><a href="../contact.html">contact</a></li>
+        </ul>
+      </nav>
+
+      <button type="button" class="humburger">
+        <span class="humburger-line"></span>
+      </button>
+    </div>
+  </header>
+  <!--header-->
+
+  <!--パンくずリスト-->
+  <section class="breadcrumb">
+    <div class="container">
+      <ol class="crumb-list" itemscope itemtype="https://schema.org/BreadcrumbList">
+        <!-- 1つめ -->
+        <li class="crumb-item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a itemprop="item" href="../index.html">
+            <span itemprop="name">HOME</span>
+          </a>
+          <meta itemprop="position" content="1" />
+        </li>
+
+        <!-- 2つめ -->
+        <li class="crumb-item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a itemprop="item" href="works.html">
+            <span itemprop="name">works</span>
+          </a>
+          <meta itemprop="position" content="2" />
+        </li>
+
+        <!-- 3つめ -->
+        <li class="crumb-item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+            <span itemprop="name">seminar site</span>
+          <meta itemprop="position" content="3" />
+        </li>
+    </div>
+  </section>
+  <!--/-->
+
+  <!--main-->
+  <main class="contents">
+    <article class="article">
+      <div class="article-inner">
+        <h1 class="article-title">SEMINAR site (架空サイト)</h1>
+        <div class="article-img"><img src="../image/seminor site.jpg" alt="セミナーサイトの画像です"></div>
+
+        <div class="article-body">
+
+          <h3 class="article-info">URL</h3>
+          <p><a href="https://yuji-jp.github.io/seminarSite/" target="_blank"
+              rel="noopener">https://yuji-jp.github.io/seminarSite/</a></p>
+          <h3 class="article-info">作品名</h3>
+          <p>セミナーサイト（架空）</p>
+          <h3 class="article-info">使用技術</h3>
+          <p>HTML5,CSS3,Javascript(jquery)</p>
+          <h3 class="article-info">デザインデータ</h3>
+          <p>Adobe XD</p>
+          <h3 class="article-info">デザインについて</h3>
+          <p>
+            <a href="https://webdesigner-go.com/coding-practice/">『無料コーディング練習所』</a>というサイトの一つを模写してデザインしました。
+          </p>
+          <h3 class="article-info">コーディングポイント</h3>
+          <p><span>・HTML</span> <br>
+            input,selectを使ってのフォームの実装。</p>
+          <p><span>・CSS</span> <br>
+            メインビジュアル、各セクションの背景、ボタンなどにcssグラデーション使用。頻出のcolorは:rootで変数指定し、活用。<br>
+            メインビジュアル内のテキストをtransform:rotato();で文字回転。 <br class="sp">box-shadowを指定し立体的なボタンに。<br>
+            clampを使用しメインビジュアルの「work revolution」をwindowの幅に応じて拡大・縮小するようにし、font-feature-settingsプロパティでカーニングを行う。
+          </p>
+          <p><span>・Javascript(jquery)</span><br>
+            ハンバーガーメニュー、ナビのリンクをクリック時に各セクションへのスクロール、サイト右下にページトップへ戻るボタンの実装。</p>
+        </div>
+        <div class="works-button">
+          <a class="works-link" href="works.html">Works一覧へ</a>
+        </div>
+
+      </div>
+    </article>
+
+  </main>
+  <!--/main-->
+
+  <!--footer-->
+  <footer id="footer" class="footer">
+    <div class="copyright">
+      <p>&copy;.select</p>
+    </div>
+  </footer>
+  <!--/footer-->
+
+  <!--pageTop-->
+  <div class="page-top">
+    <a href="#" class="page-topLink"><i class="fa-solid fa-arrow-up"></i></a>
+  </div>
+  <!--/pageTop-->
+
+  <script src="https://kit.fontawesome.com/75df040f4e.js" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="../js/script.js"></script>
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+
+</body>
+
+</html>

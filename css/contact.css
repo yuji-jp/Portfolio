@@ -1,0 +1,516 @@
+@charset "UTF-8";
+/*----------
+base
+---------------*/
+
+body {
+  font-family: "Montserrat", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans",
+    Meiryo, sans-serif;
+  font-size: 14px;
+  line-height: 1.8;
+  letter-spacing: .8px;
+  color: #333;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+  vertical-align: bottom;
+  height: auto;
+}
+
+/*-----------
+レイアウト
+----------------*/
+section {
+  padding: 80px 0;
+}
+
+.container {
+  max-width: 1340px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/*------------
+btn
+---------------*/
+.btn{
+  /*ボタンの形状*/
+  display: inline-block;
+  position: relative;
+  padding: 18px 60px;  
+  border-radius:30px;
+  text-decoration: none;
+  border:1px solid #333;
+  outline: none;
+  /*アニメーションの指定*/ 
+  transition: all 0.4s ease-out;
+}
+
+/*hoverした際、グラデーションと影を付ける*/
+.btn:hover{
+  /*ボタンの形状*/
+  border-color:transparent;
+  /*背景の色と形状*/
+  background: linear-gradient(90deg, rgba(65, 164, 253, 1), rgba(14, 244, 255, 1));
+  background-size: 200% auto;
+  background-position: right center;
+  /*ボックスの影*/   
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+}
+
+.btn::after {
+  position: absolute;
+  top: 50%;
+  right: 1.5em;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f0da";
+  transition: 0.4s;
+  transform: translateY(-50%);
+  font-size: 14px;
+}
+
+/*-----------
+  header
+  ----------------*/
+.header {
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+}
+
+.header.is-active {
+  height: 65px;
+  background-color: #fff;
+}
+
+.header-inner {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px;
+}
+
+.site-logo {
+  text-transform: uppercase;
+  line-height: 1;
+  color: #000;
+}
+
+.navi-list {
+  display: flex;
+  align-items: center;
+  column-gap: 50px;
+}
+
+.navi-item {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.navi-item a {
+  position: relative;
+  display: inline-block;
+  color: #000;
+}
+
+.navi-item a:hover {
+  opacity: 0.7;
+}
+
+.navi-item a::after {
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 1px;
+  background: #333;
+  transform: scale(0, 1);
+  transform-origin: right top;
+  transition: transform .3s;
+}
+
+.navi-item a:hover::after {
+  transform-origin: left top;
+  transform: scale(1, 1);
+}
+
+.humburger {
+  display: none;
+}
+
+/*------------
+    sub header
+    -----------------*/
+.subHeader {
+  height: 240px;
+  background-image: url(../image/23488580_m.jpg);
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  background-repeat: no-repeat;
+  color: #333;
+}
+
+.subHeader-body {
+  text-align: center;
+}
+
+.subHeader-title {
+  font-weight: bold;
+  line-height: 1.2;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  font-size: 36px;
+}
+
+.subHeader-title span {
+  display: block;
+  margin-top: 5px;
+  letter-spacing: 0.05em;
+  font-size: 13px;
+}
+
+/*--------------
+  パンくずリスト
+  --------------------*/
+.breadcrumb {
+  position: sticky;
+  top: 65px;
+  z-index: 1;
+  padding: 8px 0;
+  list-style: none;
+  background-color: #f0f0f0;
+}
+
+.crumb-list {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.crumb-item {
+  display: inline;
+  list-style: none;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.crumb-item a {
+  color: #52b5ee;
+  position: relative;
+}
+
+.crumb-item a::after {
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 1px;
+  background: #52b5ee;
+  transform: scale(0, 1);
+  transform-origin: right top;
+  transition: transform .3s;
+}
+
+.crumb-item a:hover::after {
+  transform-origin: left top;
+  transform: scale(1, 1);
+}
+
+.crumb-item:after {
+  /* >を表示*/
+  content: '>';
+  padding: 0 0.2em;
+  color: #555;
+}
+
+.crumb-item:last-child:after {
+  content: '';
+}
+
+/*--------
+  form
+  ------------*/
+.contact-body {
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.contact-text {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.form {
+  padding: 90px;
+  background-color: #f0f0f0;
+}
+
+.form-item:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.form-radio:not(:last-child) {
+  margin-right: 30px;
+}
+
+.form-title {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-require {
+  margin-left: 10px;
+  color: red;
+  font-size: 12px;
+}
+
+.form-input,
+.form-select {
+  width: 300px;
+  padding: 8px;
+  border: solid 1px #aaa;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.form-textarea {
+  min-width: 600px;
+  min-height: 200px;
+  padding: 8px;
+  resize: both;
+  border: solid 1px #aaa;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+
+.form-btn {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/*------------
+footer
+---------------*/
+.footer {
+  padding: 40px 30px;
+  background-color: #000;
+}
+
+.copyright {
+  text-align: center;
+  color: #fff;
+}
+
+/*--------------
+page-top
+--------------*/
+.page-top {
+  position: fixed;
+  right: 45px;
+  bottom: 45px;
+  z-index: 1;
+}
+
+.page-topLink {
+  display: block;
+  width: 50px;
+  height: 50px;
+  padding: 12px;
+  text-align: center;
+  text-decoration: none;
+  box-shadow: 0 0 6px rgb(0 0 0 / 20%);
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+
+  /*---------
+   レイアウト
+   -------------*/
+  .container {
+    padding: 0 20px;
+  }
+
+  section {
+    padding: 40px 0;
+  }
+
+  .sp {
+    display: block;
+  }
+
+  /*---
+   sp header
+   -----------*/
+  .header-inner {
+    height: 64px;
+    padding: 0 15px;
+  }
+
+  .header-logo {
+    width: 124px;
+  }
+
+  /*-------
+  ハンバーガーメニュー
+  --------------*/
+  .humburger {
+    /* ボタンの配置位置  */
+   position: fixed;
+   top: 16px;
+   right: 16px;
+   /* ボタンの大きさ  */
+   width: 50px;
+   height: 40px;
+   /* バーガーの線をボタン範囲の中心に配置 */
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   /* 最前面に */
+   z-index: 10;
+  }
+ 
+  .humburger-line {
+   /* 線の長さと高さ */
+   width: 100%;
+   height: 4px;
+   /* バーガー線の色 */
+   background-color: #333;
+   /* バーガー線の位置基準として設定 */
+   position: relative;
+   transition: .2s;
+ }
+ 
+ /***** 上下のバーガー線 *****/
+ .humburger-line::before,
+ .humburger-line::after {
+   content: "";
+   /* 基準線と同じ大きさと色 */
+   position: absolute;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: #333;
+   transition: .2s;
+ }
+ 
+ 
+ .humburger-line::before {
+   /* 上の線の位置 */
+   transform: translateY(-16px);
+ }
+ 
+ 
+ .humburger-line::after {
+   /* 下の線の位置 */
+   transform: translateY(16px);
+ }
+ 
+ .humburger-line.open {
+   /* 真ん中の線を透明に */
+   background-color: transparent;
+ }
+ 
+ .humburger-line.open::before,
+ .humburger-line.open::after {
+   content: "";
+   transition: .2s;
+ }
+ 
+ .humburger-line.open::before {
+   /* 上の線を傾ける */
+   transform: rotate(45deg);
+ }
+ 
+ .humburger-line.open::after {
+   /* 上の線を傾ける */
+   transform: rotate(-45deg);
+ }
+ .navi-list {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 50%;
+ /*  メニューを非表示に  */
+   visibility: hidden;
+   opacity: 0;
+   /* メニューを縦に */
+   display: flex;
+   flex-direction: column;
+   color: #efefef;
+   background-color: #f0f0f0;
+   transition: opacity .3s;
+ }
+ 
+ .navi-item {
+   width: 100%;
+   height: 100%;
+   /* メニューテキスト位置をリスト内中心に */
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+ 
+ 
+ .navi-list.open {
+     visibility: visible;
+     opacity: 1;
+     transition: opacity .5s;
+   }
+
+  /*--------------
+form
+-------------*/
+  .form {
+    padding: 30px;
+  }
+
+  .form-radio {
+    display: block;
+  }
+
+  .form-radio:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 5px;
+  }
+
+  .form-input,
+  .form-select {
+    width: 100%;
+  }
+
+  .form-textarea {
+    width: 100%;
+    min-width: 100%;
+  }
+}
