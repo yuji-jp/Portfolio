@@ -46,7 +46,6 @@ btn
 .btn{
   /*ボタンの形状*/
   display: inline-block;
-  position: relative;
   padding: 18px 60px;  
   border-radius:30px;
   text-decoration: none;
@@ -66,18 +65,6 @@ btn
   background-position: right center;
   /*ボックスの影*/   
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
-}
-
-.btn::after {
-  position: absolute;
-  top: 50%;
-  right: 1.5em;
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  content: "\f0da";
-  transition: 0.4s;
-  transform: translateY(-50%);
-  font-size: 14px;
 }
 
 /*-----------
@@ -309,7 +296,11 @@ btn
 
 
 .form-btn {
-  margin-bottom: 30px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.form-text {
   text-align: center;
 }
 
